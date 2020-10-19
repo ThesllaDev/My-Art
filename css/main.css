@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #f1f1f1;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
