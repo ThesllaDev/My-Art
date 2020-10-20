@@ -1,4 +1,7 @@
-*{
+/* RESETS AND GENERAL STYLES */
+
+*,
+main{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
@@ -7,4 +10,132 @@
 body{
     background-color: #f1f1f1;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    margin: 0px;
+}
+
+/* NAVIGATION MENU */
+
+.menu{
+    align-items: center;
+    background-color: rgba(241, 241, 241, 0.70);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.menu li{
+    display: inline-flex;
+}
+
+.menu a{
+    color: #000;
+    font-weight: bold;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* ARTS SECTION */
+
+.arts{
+    padding-top: 90px;
+}
+
+.container-row{
+    display: grid;
+    grid-template-columns: 100vw;
+    line-height: 0.7;
+}
+
+/* ABOUT SECTION */
+
+#about{
+    text-align: center;
+}
+
+#about h2{
+    font-size: 1.8rem;
+    padding-top: 64px;
+}
+
+#about img{
+    max-width: 300px;
+    padding: 32px 0;
+}
+
+/* CONTACT FORM */
+
+form{
+    margin: 0 auto;
+    width: 60%;
+}
+
+form p:nth-of-type(2){
+    color: #e91e63;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 16px !important;
+    width: 100%;
+}
+
+input:focus{
+    border: 3px solid #757575;
+}
+
+button{
+    background-color: #616161;
+    border: 1px solid #616161;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 40px;
+    text-align: center;
+}
+
+footer a{
+    color: #000;
+}
+
+/* SCREEN ADJUSTMENTS AND FEATURES */
+
+@media screen and (min-width: 800px){
+    .container-row{
+        grid-template-columns: repeat(2, 49vw);
+    }
+
+    .menu a:hover{
+        background-color: #ccc;
+        border: 1px solid #000;
+    }
+
+    button:hover{
+        background-color: #ccc;
+        color: #000;
+    }
 }

@@ -9,7 +9,7 @@
     <title>My Art</title>
 </head>
 <body>
-    <header> <!-- NAVIGATION MENU -->
+    <header class="menu"> <!-- NAVIGATION MENU -->
         <h1><a href="index.html" title="Go to the home page">My Art</a></h1>
         <nav>
             <ul>
@@ -19,33 +19,32 @@
         </nav>
     </header>
     <main>
-        <section id="arts"> <!-- ARTS SECTIONS -->
+        <section class="arts"> <!-- ARTS SECTIONS -->
             <div class="container-row">
                 <div class="container-column">
                     <img src="img/streetart.jpg" alt="underground wall art">
                     <img src="img/streetart2.jpg" alt="Einstein wall art">
-                    <img src="img/streetart3.jpg" alt="abstract wall art">
+                    <img src="img/streetart3.jpg" alt="wall art of a heart">
                 </div>
-            </div>
-            <div class="container-row">
                 <div class="container-column">
-                    <img src="img/streetart4.jpg" alt="psychedelic wall art">
-                    <img src="img/streetart5.jpg" alt="wall art of a heart">
+                    <img src="img/streetart4.jpg" alt="abstract wall art">
+                    <img src="img/streetart5.jpg" alt="psychedelic wall art">
                 </div>
             </div>
         </section>
         <section id="about"> <!-- ABOUT SECTION -->
             <h2>About</h2>
             <img src="img/artist.jpg" alt="artist profile picture">
-            <form> <!-- CONTACT FORM -->
+            <form id="contact"> <!-- CONTACT FORM -->
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, assumenda quos, quo repellat nam id dolore debitis, eius voluptates laborum nemo officiis sit exercitationem doloribus suscipit veritatis? In, laboriosam cum?</p>
                 <p>Do not hesitate to contact me!</p>
-                <label for="input-name">Name:</label>
-                <input type="text" name="input-name" placeholder="Enter your first and last name">
-                <label for="input-email">Email:</label>
-                <input type="email" name="input-email" placeholder="Type your e-mail">
-                <label for="input-message">Message:</label>
-                <input type="text" name="input-message" placeholder="Write your message">
+                <label for="input-name">Name :</label>
+                <input type="text" id="input-name" placeholder="Enter your first and last name" required>
+                <label for="input-email">Email :</label>
+                <input type="email" id="input-email" placeholder="Type your e-mail" required autocomplete="email">
+                <label for="input-message">Message :</label>
+                <input type="text" id="input-message" placeholder="Write your message" required>
+                <button type="submit">Send</button>
             </form>
         </section>
     </main>
